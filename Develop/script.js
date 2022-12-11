@@ -13,25 +13,23 @@ $(function () {
 
 // COMPELTE! Function to save calendar event to local storage
   $(".saveBtn").on('click', function (e) {
-    e.preventDefault();
     var time = $(this).parent().attr('id');
     var event = $(this).siblings(".description").val();
-    // console.log(time);
-    // console.log(event);
+    e.preventDefault();
 
+    // creates array of the users current event
     var calendarEvent = {
       time: time,
       event: event,
     };
-    console.log(calendarEvent);
+    // console.log(calendarEvent); //used to test
 
+
+    // adds the event to the globally stored array
     calendarArray.push(calendarEvent);
     localStorage.setItem("calendarArray", JSON.stringify(calendarArray));
 
   });
-
-
-
 
   // COMPLETE! function for colourizing hours
   $(".time-block").each(function () {
@@ -59,7 +57,7 @@ $(function () {
   // attribute of each time-block be used to do this?
   //
 
-  
+
 
 
   // FIXME: Change date format to include ordinal.function to display current date in the header of the page.
