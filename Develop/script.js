@@ -56,6 +56,31 @@ $(function () {
   // the values of the corresponding textarea elements. HINT: How can the id
   // attribute of each time-block be used to do this?
   //
+  $(".time-block").each(function () {
+    // create varible for hours within HTML element
+    let timeBlock= $(this).attr("id");
+    console.log(timeBlock);
+    console.log(calendarArray);
+
+    let localTime = JSON.parse(localStorage.getItem("calendarArray"));
+    
+    console.log(localTime[0].time);
+
+    for (let i=0; i<calendarArray.length; i++){
+      if (timeBlock==(localTime[i].time)) {
+        // check for event content
+        // input event text to display
+        console.log("working");
+      }else{
+        console.log("broken");
+      }  
+    };
+  });
+
+    // you can use the hour - in quotes as the target as that never changes.
+  // loop through alendar array
+  // select 
+
 
 
 
