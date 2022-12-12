@@ -59,21 +59,24 @@ $(function () {
   $(".time-block").each(function () {
     // create varible for hours within HTML element
     let timeBlock= $(this).attr("id");
-    console.log(timeBlock);
-    console.log(calendarArray);
+    // console.log(timeBlock);
+    // console.log(calendarArray);
 
     let localTime = JSON.parse(localStorage.getItem("calendarArray"));
     
-    console.log(localTime[0].time);
+    // console.log(localTime[0].time);
 
     for (let i=0; i<calendarArray.length; i++){
       if (timeBlock==(localTime[i].time)) {
-        // check for event content
-        // input event text to display
-        console.log("working");
-      }else{
-        console.log("broken");
-      }  
+        // console.log(localTime[i].event);
+        var message = localTime[i].event;
+        // console.log(timeBlock.children[1]);
+        ($("#"+timeBlock).children(1).text(message));
+
+        console.log("working"); //this works
+      }//else{
+      //   console.log("broken");
+      // }  
     };
   });
 
