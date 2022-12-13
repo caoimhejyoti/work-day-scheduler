@@ -51,11 +51,7 @@ $(function () {
   });
 
 
-// Task 3
-  // TODO: Add code to get any user input that was saved in localStorage and set
-  // the values of the corresponding textarea elements. HINT: How can the id
-  // attribute of each time-block be used to do this?
-  //
+
   $(".time-block").each(function () {
     // create varible for hours within HTML element
     let timeBlock= $(this).attr("id");
@@ -74,15 +70,10 @@ $(function () {
         ($("#"+timeBlock).children(1).text(message));
 
         console.log("working"); //this works
-      }//else{
-      //   console.log("broken");
-      // }  
+      }
     };
   });
 
-    // you can use the hour - in quotes as the target as that never changes.
-  // loop through alendar array
-  // select 
 
 
 
@@ -111,7 +102,12 @@ $(function () {
   // past, present, and future classes? How can Day.js be used to get the
   // current hour in 24-hour time?
 
-
+  
+// Task 3
+  // TODO: Add code to get any user input that was saved in localStorage and set
+  // the values of the corresponding textarea elements. HINT: How can the id
+  // attribute of each time-block be used to do this?
+  //
 
 
 // Task 4
