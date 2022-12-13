@@ -4,6 +4,8 @@ var currentHour = dayjs().hour();
 console.log(currentHour);
 let calendarArray = JSON.parse(localStorage.getItem("calendarArray")) || [];
 let eventHour= $(this).attr("id");
+let clearBtn = $(this).attr("clear");
+
 
 // MASTER FUNCTION: all other functions within this function to allow for the HTTP page to fully load before any js is triggered.
 $(function () {
