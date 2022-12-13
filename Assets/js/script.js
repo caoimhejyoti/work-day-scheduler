@@ -82,8 +82,8 @@ $(function () {
   
 });
 
-// possible development
-clearBtn.on('click', function(e){
+// Development - event listener added to clear button to allow user to clear local storage.
+clearBtn.addEventListener('click', function(e){
   e.preventDefault();
   localStorage.clear();
   window.location.reload();
