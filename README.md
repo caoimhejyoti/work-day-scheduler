@@ -9,7 +9,7 @@ I wanted to create a simple web app for the user to create a daily schedule, uso
 To develop and practise my jquery skills.
 
 ### What problem does it solve?
-
+This app allows the user to easily plan thier schedules and organise the day ahead of them.
 
 ### What did you learn?
 1. Learnt how to select specific parts of an element id
