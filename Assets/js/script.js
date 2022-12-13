@@ -1,13 +1,10 @@
-// Wrap all code that interacts with the DOM in a call to jQuery to ensure that
-// the code isn't run until the browser has finished rendering all the elements
-// in the html.
 // global vars
 var timeDisplayEl = $('#currentDay');
 var currentHour = dayjs().hour();
 console.log(currentHour);
 let calendarArray = JSON.parse(localStorage.getItem("calendarArray")) || [];
 let eventHour= $(this).attr("id");
-// let eventText = $(this).
+
 
 $(function () {
 
@@ -23,7 +20,6 @@ $(function () {
       event: event,
     };
     // console.log(calendarEvent); //used to test
-
 
     // adds the event to the globally stored array
     calendarArray.push(calendarEvent);
@@ -51,7 +47,7 @@ $(function () {
   });
 
 
-
+// Function for 
   $(".time-block").each(function () {
     // create varible for hours within HTML element
     let timeBlock= $(this).attr("id");
@@ -67,7 +63,7 @@ $(function () {
         // console.log(localTime[i].event);
         var message = localTime[i].event;
         // console.log(timeBlock.children[1]);
-        ($("#"+timeBlock).children(1).text(message));
+        ($("#"+timeBlock).children(".description").text(message)); //FIXME: currently not targeting one child, but all children! 
 
         console.log("working"); //this works
       }
@@ -75,15 +71,12 @@ $(function () {
   });
 
 
-
-
-
-
   // FIXME: Change date format to include ordinal.function to display current date in the header of the page.
   var rightNow = dayjs().format('MMM DD, YYYY [at] hh:mm:ss a');
   timeDisplayEl.text(rightNow);
   
 });
+
 
 // Task 1
   // TODO: Add a listener for click events on the save button. This code should
