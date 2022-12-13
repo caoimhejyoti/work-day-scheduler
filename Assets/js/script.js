@@ -75,13 +75,14 @@ $(function () {
   });
 
 // FIXME: Change date format to include ordinal.function to display current date in the header of the page.
-  var rightNow = dayjs().format('MMM DD, YYYY [at] hh:mm:ss a');
+  var rightNow = dayjs().format('DD MMM YYYY [at] hh:mm:ss a');
   timeDisplayEl.text(rightNow);
   
 });
 
 // possible development
-  // clearBtn.addEventListener('click', function(e){
-  //   e.preventDefault();
-  //   localStorage.clear();
-  //   window.location.reload();
+clearBtn.on('click', function(e){
+  e.preventDefault();
+  localStorage.clear();
+  window.location.reload();
+});
