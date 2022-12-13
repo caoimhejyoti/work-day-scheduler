@@ -62,6 +62,12 @@ https://stackoverflow.com/questions/58296281/how-do-i-get-an-array-from-local-st
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split
 
+https://stackoverflow.com/questions/415602/set-value-of-textarea-in-jquery
+
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea
+
+https://api.jquery.com/children/#children-selector
+
 
 ## License
 MIT License
