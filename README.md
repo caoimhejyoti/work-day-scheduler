@@ -22,11 +22,16 @@ This app allows the user to easily plan thier schedules and organise the day ahe
 
 
 ## Usage
+![Screen shot of blank scheduler. All hours are grey due to the time being 9:34pm](Assets/img/blank%20schedulers.png)
+
 User is able to insert events into the hour blocks and save them to the local storage for later use.
 
 Each hour block changes colour in relation to the current time. if the time has past, the event block will be grey. Any future events will be in green. The current hour block will be in red. 
 
 If the user wishes to use the scheduler on a different day, they are able to click the "Clear Schedule" button. This button triggers a clear of the local storage and refresh the window. 
+
+
+![Close up screen shot of Clear Schedule button](Assets/img/Clear%20schedule%20button.png)
 
 Future developments will look at how 
 
