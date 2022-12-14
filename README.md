@@ -38,6 +38,7 @@ If the user wishes to use the scheduler on a different day, they are able to cli
 ## Future Developments 
 1. I would like to develop a message to the user to confirm with them that the event has been saved successfully
 2. Look at the Clear Schedule button design. It is currently just a default design. It would be nice to add some colour and additional styling.
+3. Create the event divs using JS, not repeated HTML elements.
 
 
 ## Credits
