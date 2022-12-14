@@ -19,6 +19,7 @@ This app allows the user to easily plan thier schedules and organise the day ahe
 
 
 ## Installation
+https://caoimhejyoti.github.io/work-day-scheduler/
 
 
 ## Usage
@@ -33,35 +34,11 @@ If the user wishes to use the scheduler on a different day, they are able to cli
 
 ![Close up screen shot of Clear Schedule button](Assets/img/Clear%20schedule%20button.png)
 
-Future developments will look at how 
 
-## User Story and Acceptance Criteria provided by Client
+## Future Developments 
+1. I would like to develop a message to the user to confirm with them that the event has been saved successfully
+2. Look at the Clear Schedule button design. It is currently just a default design. It would be nice to add some colour and additional styling.
 
-### User Story
-
-```md
-AS AN employee with a busy schedule
-I WANT to add important events to a daily planner
-SO THAT I can manage my time effectively
-```
-
-### Acceptance Criteria
-
-```md
-GIVEN I am using a daily planner to create a schedule
-WHEN I open the planner
-THEN the current day is displayed at the top of the calendar
-WHEN I scroll down
-THEN I am presented with timeblocks for standard business hours
-WHEN I view the timeblocks for that day
-THEN each timeblock is color coded to indicate whether it is in the past, present, or future
-WHEN I click into a timeblock
-THEN I can enter an event
-WHEN I click the save button for that timeblock
-THEN the text for that event is saved in local storage
-WHEN I refresh the page
-THEN the saved events persist
-```
 
 ## Credits
 ### Sources
